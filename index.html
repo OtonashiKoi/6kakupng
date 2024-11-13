@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六邊形能力值圖表</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>數值和文字設定</h2>
+            <div class="settings" id="statInputs">
+                <!-- 將由 JavaScript 動態生成 -->
+            </div>
+        </div>
+
+        <div>
+            <h2>顏色設定</h2>
+            <div class="color-picker">
+                <input type="color" id="colorPicker" value="#6366f1">
+                <span id="colorValue"></span>
+            </div>
+        </div>
+
+        <div>
+            <button onclick="downloadChart()">下載 PNG 檔案</button>
+        </div>
+
+        <div class="chart-container">
+            <svg id="chart" width="600" height="600" viewBox="0 0 600 600"></svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

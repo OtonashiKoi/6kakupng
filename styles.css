@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stat-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    width: 120px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #6366f1;
+    outline: none;
+}
+
+input[type="number"] {
+    padding: 8px 12px;
+    width: 70px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #6366f1;
+    outline: none;
+}
+
+.color-picker {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #6366f1;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container svg {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#colorValue {
+    font-size: 14px;
+    color: #666;
+}
+
+/* SVG 文字樣式 */
+.chart-label {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    fill: #6366f1;
+}
+
+.chart-value {
+    font-size: 36px;
+    font-weight: 600;
+    fill: #6366f1;
+}
